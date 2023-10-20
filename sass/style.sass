@@ -55,19 +55,19 @@
 
 
 .btn_grup
-    height: 400px
+    height: 300px
     width: 100%
     .input_locate
-        height: 40px
+        height: 60px
         .img_search
             width: 30px
             height: 30px
             position: absolute
-            transform: translate(11px, 5px)
+            transform: translate(11px, 9px)
         .search_locate
             border-radius: 15px
             width: 100%
-            height: 40px
+            height: 50px
             font-size: 20px
             padding-left: 45px
 
@@ -78,6 +78,13 @@
         text-align: center
         justify-content: center
         margin-top: 30px
+        &::before
+                content: ''
+                position: absolute
+                background-color: #00000080
+                width: 2px
+                height: 125px 
+                transform: translate(0px, 20px)
         .grup
             text-align: center
             padding: 0 10px
@@ -100,6 +107,7 @@
     position: fixed
     bottom: 0
     width: 100%
+    background-color: #fff
     button
         background: none
         border: none

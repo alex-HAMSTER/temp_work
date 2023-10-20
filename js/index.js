@@ -1,2 +1,0 @@
-slider.arrow();
-slider.btnDotList();
