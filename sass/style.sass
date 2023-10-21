@@ -1,6 +1,8 @@
 @import 'annul'
+
+
 .container
-    padding: 0 5px
+    padding: 0 10px
     padding-top: 10px
 .header
     width: 100%
@@ -11,8 +13,7 @@
     background-position: center center
     background-color: #d9292b
     .container
-        padding: 0 30px
-        padding-top: 20px
+
 
         .head
             display: flex
@@ -20,10 +21,10 @@
             img
                 width: 40px
 
+
+
 .locate
     .container
-        padding: 0 50px
-        padding-top: 10px
         .title
             margin-top: 5px
             display: flex
@@ -33,10 +34,11 @@
             text-transform: uppercase
             .servis
                 font-size: 16px
+                text-align: center
         .block_count
             display: flex
             justify-content: center
-            gap: 50px
+            gap: 60px
             text-align: center
             margin-top: 25px
             .cunter
@@ -59,6 +61,7 @@
     width: 100%
     .input_locate
         height: 60px
+        margin-top: 15px
         .img_search
             width: 30px
             height: 30px
@@ -86,20 +89,26 @@
                 height: 125px 
                 transform: translate(0px, 20px)
         .grup
-            text-align: center
             padding: 0 10px
             padding-top: 20px
             width: 45%
             height: 135px
             text-decoration: none
             color: #000
+            text-align: center
             .btn_img
                 width: 80px
             .descr
                 margin-top: 20px
-                font-size: 24px
+                font-size: 22px
                 text-transform: uppercase
                 font-weight: 700
+
+.description
+    p
+        line-height: 23px
+    .lost
+        height: 55px
 
 .footer
     display: flex
@@ -111,3 +120,38 @@
     button
         background: none
         border: none
+
+
+@media (min-width: 540px)
+    .container
+        padding: 0 30px
+        padding-top: 10px
+
+@media (min-width: 684px)
+    .header
+        height: 350px
+    .locate
+        .container
+            .title
+                margin-top: 25px
+
+@media (min-width: 768px)
+    .locate
+        .container
+            .title
+                .find
+                    font-size: 34px
+                .servis
+                    margin-top: 5px
+                    font-size: 22px
+            .block_count
+                font-size: 30px
+    .description
+        p
+            font-size: 22px
+            line-height: 30px
+
+@media (min-width: 1024px)
+    .container
+        padding: 0 10%
+        padding-top: 15px
