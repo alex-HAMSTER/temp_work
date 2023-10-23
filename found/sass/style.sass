@@ -60,8 +60,21 @@ body
     .container
         display: flex
         flex-direction: column
-        gap: 20px
+        gap: 50px
         .qest_chek
             select
                 margin-top: 8px
                 height: 105px
+
+@media (min-width: 576px)
+    .container
+        padding: 0 10vw
+        padding-top: 10px
+
+@media (min-width: 768px)
+    .choice 
+        .container 
+            .choice_btn 
+                .select
+                    width: 30%
+                    margin: 0 auto
