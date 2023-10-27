@@ -28,48 +28,49 @@
     background-color: #d9292b
     .bordrr
         background-color: #fff
-        border-radius: 30px 30px 0 0
-    .container
-        .title
-            margin-top: 5px
-            display: flex
-            flex-direction: column
-            align-items: center
-            gap: 10px
-            text-transform: uppercase
-            .servis
-                font-size: 16px
+        border-radius: 50px 50px 0 0
+        box-shadow: 0px -10px 10px 0px #0000002b
+        .container
+            .title
+                margin-top: 5px
+                display: flex
+                flex-direction: column
+                align-items: center
+                gap: 10px
+                text-transform: uppercase
+                .servis
+                    font-size: 16px
+                    text-align: center
+                    text-transform: none
+            .block_count
+                display: flex
+                justify-content: center
+                gap: 60px
                 text-align: center
-                text-transform: none
-        .block_count
-            display: flex
-            justify-content: center
-            gap: 60px
-            text-align: center
-            margin-top: 25px
-            .cunter
-                font-size: 20px
-                color: #000
-                font-weight: 700
-                margin-top: 15px
-            .element_1
-                &::before
-                    content: ''
-                    position: absolute
-                    background-color: black
-                    width: 90px
-                    height: 1px
-                    margin-top: -13px
-                    margin-left: -24px
-            .element_2
-                &::before
-                    content: ''
-                    position: absolute
-                    background-color: black
-                    width: 90px
-                    height: 1px
-                    margin-top: -13px
-                    margin-left: -20px
+                margin-top: 25px
+                .cunter
+                    font-size: 20px
+                    color: #000
+                    font-weight: 700
+                    margin-top: 15px
+                .element_1
+                    &::before
+                        content: ''
+                        position: absolute
+                        background-color: #c0c0c0
+                        width: 90px
+                        height: 1px
+                        margin-top: -13px
+                        margin-left: -24px
+                .element_2
+                    &::before
+                        content: ''
+                        position: absolute
+                        background-color: #c0c0c0
+                        width: 90px
+                        height: 1px
+                        margin-top: -13px
+                        margin-left: -20px
 
 
 
@@ -138,9 +139,32 @@
     width: 100%
     background-color: #fff
     align-items: flex-start
-    button
+    .menu
         background: none
         border: none
+        cursor: pointer
+        z-index: 5
+
+    .menu_animation
+        position: absolute
+        width: 80%
+        z-index: 1
+        .menu_list
+            height: 260px
+            background-color: rgb(217 41 44 / 87%)
+            font-size: 30px
+            display: flex
+            flex-direction: column
+            gap: 30px
+            transform: translateY(-300px)
+            align-items: center
+            justify-content: center
+            border-radius: 30px
+            .list_item
+                a
+                    color: #ffffff
+                    text-decoration: none
+
 
 
 @media (min-width: 540px)
@@ -152,34 +176,36 @@
     .header
         height: 350px
     .locate
-        .container
-            .title
-                margin-top: 25px
+        .bordrr
+            .container
+                .title
+                    margin-top: 25px
 
 @media (min-width: 768px)
     .locate
-        .container
-            .title
-                .find
-                    font-size: 34px
-                .servis
-                    margin-top: 5px
-                    font-size: 22px
-            .block_count
-                font-size: 30px
+        .bordrr
+            .container
+                .title
+                    .find
+                        font-size: 34px
+                    .servis
+                        margin-top: 5px
+                        font-size: 22px
+                .block_count
+                    font-size: 30px
 
-                .element_1
-                    &::before
-                        width: 160px
-                        height: 2px
-                        margin-top: -9px
-                        margin-left: -60px
-                .element_2
-                    &::before
-                        width: 100px
-                        height: 2px
-                        margin-top: -9px
-                        margin-left: -24px
+                    .element_1
+                        &::before
+                            width: 160px
+                            height: 2px
+                            margin-top: -9px
+                            margin-left: -60px
+                    .element_2
+                        &::before
+                            width: 100px
+                            height: 2px
+                            margin-top: -9px
+                            margin-left: -24px
     .description
         p
             font-size: 22px
