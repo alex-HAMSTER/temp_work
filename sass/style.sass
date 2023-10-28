@@ -132,40 +132,53 @@
 
 .footer
     height: 70px
-    display: flex
-    justify-content: center
     position: fixed
     bottom: 0
     width: 100%
     background-color: #fff
-    align-items: flex-start
-    .menu
-        background: none
-        border: none
-        cursor: pointer
-        z-index: 5
+    .container
+        padding: 0
+        .menu_animation
+            width: 100%
+            display: flex
+            justify-content: center
+            align-items: center
+            font-size: 30px
+            gap: 35px
+            flex-direction: column
+            transition: 1.5s
+            .menu
+                background: none
+                border: none
+                cursor: pointer
+                z-index: 5
+            .menu_list
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                gap: 30px
+                background-color: rgb(217 41 44 / 87%)
+                border-radius: 30px
+                width: 100%
+                height: 290px
+                .list_item
+                    a
+                        text-decoration: none
+                        color: #000
 
-    .menu_animation
+/*     .menu_animation
         position: absolute
-        width: 80%
+
         z-index: 1
         .menu_list
             height: 260px
-            background-color: rgb(217 41 44 / 87%)
-            font-size: 30px
-            display: flex
-            flex-direction: column
-            gap: 30px
-            transform: translateY(85px)
-            align-items: center
-            justify-content: center
-            border-radius: 30px
+
             transition: 1.5s
             .list_item
                 a
                     color: #ffffff
-                    text-decoration: none
-
+                    text-decoration: none */
 
 
 @media (min-width: 540px)
