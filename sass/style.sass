@@ -1,0 +1,238 @@
+@import 'annul'
+
+
+.container
+    padding: 0 10px
+    padding-top: 10px
+.header
+    width: 100%
+    height: 250px
+    background-image: url('../img/mapua.png'), url('../img/logo.png')
+    background-size: 330px, 130px
+    background-repeat: no-repeat
+    background-position: center center
+    background-color: #d9292b
+    .container
+
+
+        .head
+            display: flex
+            justify-content: space-between
+            padding: 0 20px
+            img
+                width: 40px
+
+
+
+.locate
+    background-color: #d9292b
+    .bordrr
+        background-color: #fff
+        border-radius: 50px 50px 0 0
+        box-shadow: 0px -10px 10px 0px #0000002b
+        .container
+            .title
+                margin-top: 5px
+                display: flex
+                flex-direction: column
+                align-items: center
+                gap: 10px
+                text-transform: uppercase
+                .servis
+                    font-size: 16px
+                    text-align: center
+                    text-transform: none
+            .block_count
+                display: flex
+                justify-content: center
+                gap: 60px
+                text-align: center
+                margin-top: 25px
+                .cunter
+                    font-size: 20px
+                    color: #000
+                    font-weight: 700
+                    margin-top: 15px
+                .element_1
+                    &::before
+                        content: ''
+                        position: absolute
+                        background-color: #c0c0c0
+                        width: 90px
+                        height: 1px
+                        margin-top: -13px
+                        margin-left: -24px
+                .element_2
+                    &::before
+                        content: ''
+                        position: absolute
+                        background-color: #c0c0c0
+                        width: 90px
+                        height: 1px
+                        margin-top: -13px
+                        margin-left: -20px
+
+
+
+
+
+.btn_grup
+    height: 300px
+    width: 100%
+    .input_locate
+        height: 60px
+        margin-top: 15px
+        .img_search
+            width: 30px
+            height: 30px
+            position: absolute
+            transform: translate(11px, 9px)
+        .search_locate
+            border-radius: 15px
+            width: 100%
+            height: 50px
+            font-size: 20px
+            padding-left: 45px
+
+
+    .btn_links
+        display: flex
+        flex-wrap: wrap
+        text-align: center
+        justify-content: center
+        margin-top: 30px
+        &::before
+                content: ''
+                position: absolute
+                background-color: #00000080
+                width: 2px
+                height: 125px 
+                transform: translate(0px, 20px)
+        .grup
+            padding: 0 10px
+            padding-top: 20px
+            width: 45%
+            height: 135px
+            text-decoration: none
+            color: #000
+            text-align: center
+            .btn_img
+                width: 85px
+            .descr
+                margin-top: 20px
+                font-size: 22px
+                text-transform: uppercase
+                font-weight: 700
+
+.description
+    p
+        line-height: 23px
+    .lost
+        height: 100px
+
+.footer
+    height: 70px
+    position: fixed
+    bottom: 0
+    width: 100%
+    background-color: #fff
+    .container
+        padding: 0
+        .menu_animation
+            width: 100%
+            display: flex
+            justify-content: center
+            align-items: center
+            font-size: 30px
+            gap: 35px
+            flex-direction: column
+            transition: 1.5s
+            .menu
+                background: none
+                border: none
+                cursor: pointer
+                z-index: 5
+            .menu_list
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                gap: 30px
+                background-color: rgb(217 41 44 / 87%)
+                border-radius: 30px
+                width: 100%
+                height: 290px
+                .list_item
+                    a
+                        text-decoration: none
+                        color: #000
+
+/*     .menu_animation
+        position: absolute
+
+        z-index: 1
+        .menu_list
+            height: 260px
+
+            transition: 1.5s
+            .list_item
+                a
+                    color: #ffffff
+                    text-decoration: none */
+
+
+@media (min-width: 540px)
+    .container
+        padding: 0 30px
+        padding-top: 10px
+
+@media (min-width: 684px)
+    .header
+        height: 350px
+    .locate
+        .bordrr
+            .container
+                .title
+                    margin-top: 25px
+
+@media (min-width: 768px)
+    .locate
+        .bordrr
+            .container
+                .title
+                    .find
+                        font-size: 34px
+                    .servis
+                        margin-top: 5px
+                        font-size: 22px
+                .block_count
+                    font-size: 30px
+
+                    .element_1
+                        &::before
+                            width: 160px
+                            height: 2px
+                            margin-top: -9px
+                            margin-left: -60px
+                    .element_2
+                        &::before
+                            width: 100px
+                            height: 2px
+                            margin-top: -9px
+                            margin-left: -24px
+    .description
+        p
+            font-size: 22px
+            line-height: 30px
+    .header
+        .container
+            .head
+                margin-top: 30px
+
+
+@media (min-width: 1024px)
+    .container
+        padding: 0 10%
+        padding-top: 15px
+        max-width: 1024px
+        margin: 0 auto

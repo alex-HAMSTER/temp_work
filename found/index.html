@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nz</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon.ico">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="../index.html"><img src="img/arrow-prev.png" alt="prev" class="arrow_prev"></a>
+            <div class="header_descr">Знайдено</div>
+            <img src="img/clear_form.png" alt="clear" class="clear_form">
+        </div>
+    </header>
+
+    <section class="choice">
+        <div class="container">
+            <div class="choise_descr">
+                Виберіть Lorem
+            </div>
+            <div class="choice_btn">
+                <button class="btn_seach select" id="lost">
+                    <img src="img/search_earth.png" alt="search" class="select_1_img img_descr" id="select_1_img">
+                    <div class="select_1_descr">Налаштуйте пошук</div>
+                </button>
+                <button class="btn_find select" id="found">
+                    <img src="img/search_earth_red.png" alt="search" class="select_2_img img_descr" id="select_2_img">
+                    <div class="select_2_descr">Де знайшли</div>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="form">
+        <div class="container">
+
+            <div class="qest">
+                <p>Ви знаходитесь в місті Київ?</p>
+                <form>
+                    <label>
+                        <input type="radio" name="question">
+                        Так
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="question">
+                        Ні
+                    </label>
+                </form>
+            </div>
+
+            <div class="your_city">
+                <form>
+                    <select>
+                        <option disabled>Оберіть ваше місто</option>
+                        <option>Оберіть ваше місто</option>
+                        <option>Житомир</option>
+                        <option>Вінниця</option>
+                        <option>Чернігів</option>
+                        <option>Луцьк</option>
+                        <option>Черкаси</option>
+                    </select>
+                </form>
+            </div>
+
+            <div class="qest_chek">
+                <p>Оберіть категорію</p>
+                <select multiple>
+                    <option>Електроніка</option>
+                    <option>Аксесуари</option>
+                    <option>Канцелярія</option>
+                    <option>Гаманець</option>
+                    <option>Їжа</option>
+                    <option>І т д</option>
+                </select>
+            </div>
+
+
+
+            <div class="form_user">
+                <p>Введіть свої даннні для звязку з вами</p>
+                <hr>
+                <form name="form_user">
+                    <lable>І'мя:</lable><br>
+                    <input type="text" name="login"><br>
+            
+                    <lable>Email:</lable><br>
+                    <input type="email" name="email"><br>
+            
+                    <lable>Опишіть загублений предмет:</lable><br>
+                    <textarea name="messenger"></textarea>
+                    <br>
+                    <input type="submit" value="Підтвердити">
+                </form>
+            
+                <p id="text">
+                </p>
+            </div>
+        </div>
+    </section>
+
+<script src="js/index.js"></script>
+</body>
+</html>
