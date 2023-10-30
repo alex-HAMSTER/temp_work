@@ -6,7 +6,7 @@ const footer = document.querySelector('.footer')
 let isTransformed = false;
 menuButton.addEventListener('click', function() {
   if (!isTransformed) {
-    menuList.style.cssText = 'transform: translateY(-300px)';
+    menuList.style.cssText = 'transform: translateY(-335px)';
     isTransformed = true;
     footer.style.background = 'none'
   } else {
