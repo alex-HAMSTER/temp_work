@@ -1,12 +1,12 @@
 const menuButton = document.getElementById('menu');
-const menuAnimation = document.getElementById('menu_animation');
-const menuList = document.getElementById('menu_anime');
+
+const menuList = document.getElementById('menu_animation');
 const footer = document.querySelector('.footer')
 
 let isTransformed = false;
 menuButton.addEventListener('click', function() {
   if (!isTransformed) {
-    menuList.style.cssText = 'transform: translateY(-335px)';
+    menuList.style.cssText = 'transform: translateY(-320px)';
     isTransformed = true;
     footer.style.background = 'none'
   } else {
