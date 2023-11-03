@@ -1,10 +1,10 @@
-const menuButton = document.getElementById('menu');
+const menuButton = document.querySelector('#menu');
 
-const menuList = document.getElementById('menu_animation');
+const menuList = document.querySelector('#menu_animation');
 const footer = document.querySelector('.footer')
 
 let isTransformed = false;
-menuButton.addEventListener('click', function() {
+menuButton.addEventListener('click', ()=> {
   if (!isTransformed) {
     menuList.style.cssText = 'transform: translateY(-320px)';
     isTransformed = true;

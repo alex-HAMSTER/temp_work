@@ -1,7 +1,7 @@
-const lost = document.getElementById('lost')
-const found = document.getElementById('found')
-const select_1_img = document.getElementById('select_1_img')
-const select_2_img = document.getElementById('select_2_img')
+const lost = document.querySelector('#lost')
+const found = document.querySelector('#found')
+const select_2_img = document.querySelector('#select_2_img')
+const select_1_img = document.querySelector('#select_1_img')
 
 found.addEventListener('click', () => {
     found.style.backgroundColor = "#ff0000ad";
@@ -23,13 +23,13 @@ lost.addEventListener('click', () => {
     select_1_img.src= 'img/search_earth.png'
 });
 
-const menuButton = document.getElementById('menu');
+const menuButton = document.querySelector('#menu');
 
-const menuList = document.getElementById('menu_animation');
+const menuList = document.querySelector('#menu_animation');
 const footer = document.querySelector('.footer')
 
 let isTransformed = false;
-menuButton.addEventListener('click', function() {
+menuButton.addEventListener('click', ()=> {
   if (!isTransformed) {
     menuList.style.cssText = 'transform: translateY(-320px)';
     isTransformed = true;
